@@ -6,6 +6,8 @@
 Poorly chosen Database can lead to failures for your React Native
 application.
 
+Conclusion: In this project, I will be using RealM database for client database, and use firebase for server database.
+
 Local Database Options:
 
 -RealM
