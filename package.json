@@ -4,7 +4,11 @@
   "dependencies": {
     "expo": "^25.0.0",
     "react": "16.2.0",
+<<<<<<< HEAD
     "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz",
     "react-navigation": "^1.0.0-beta.27"
+=======
+    "react-native": "https://github.com/expo/react-native/archive/sdk-25.0.0.tar.gz"
+>>>>>>> bd736f08061b9dd0687f4ca08fb07c22132b0f8e
   }
 }
