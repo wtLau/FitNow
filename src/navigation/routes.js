@@ -1,7 +1,11 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { TabNavigator } from 'react-navigation';
+
 import Workout from '../scene/Workout/';
+import Logs from '../scene/Logs/';
+// import Workout from '../scene/Workout/';
+// import Workout from '../scene/Workout/';
 
 const WorkoutScreen = ({ navigation }) => (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -18,10 +22,8 @@ const ProgramScreen = ({ navigation }) => (
         <Text>Programs Screen</Text>
     </View>
 );
-const LogsScreen = () => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Logs Screen</Text>
-    </View>
+const LogsScreen = ({ navigation }) => (
+    <Logs navigation={navigation} />
 );
 
 const ProfileScreen = () => (
