@@ -1,6 +1,7 @@
 import React from 'react';
 import { View, Text, Button } from 'react-native';
 import { TabNavigator } from 'react-navigation';
+import Workout from '../scene/Workout/';
 
 const WorkoutScreen = ({ navigation }) => (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -31,7 +32,7 @@ const ProfileScreen = () => (
 
 const RootNavigator = TabNavigator({
     Workout: {
-        screen: WorkoutScreen,
+        screen: Workout,
         navigationOptions: {
             headerTitle: 'Workout',
         },
