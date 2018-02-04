@@ -4,8 +4,8 @@ import { TabNavigator } from 'react-navigation';
 
 import Workout from '../scene/Workout/';
 import Logs from '../scene/Logs/';
-// import Workout from '../scene/Workout/';
-// import Workout from '../scene/Workout/';
+import Profile from '../scene/Profile/';
+import Program from '../scene/Program/';
 
 const WorkoutScreen = ({ navigation }) => (
     <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
@@ -18,18 +18,14 @@ const WorkoutScreen = ({ navigation }) => (
 );
 
 const ProgramScreen = ({ navigation }) => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Programs Screen</Text>
-    </View>
+    <Program navigation={navigation} />
 );
 const LogsScreen = ({ navigation }) => (
     <Logs navigation={navigation} />
 );
 
-const ProfileScreen = () => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Profile Screen</Text>
-    </View>
+const ProfileScreen = ({ navigation }) => (
+    <Profile navigation={navigation} />
 );
 
 const RootNavigator = TabNavigator({
