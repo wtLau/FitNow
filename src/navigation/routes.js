@@ -8,13 +8,7 @@ import Profile from '../scene/Profile/';
 import Program from '../scene/Program/';
 
 const WorkoutScreen = ({ navigation }) => (
-    <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Workout Screen</Text>
-        <Button
-            onPress={() => navigation.navigate('Program')}
-            title="Go to Programs"
-        />
-    </View>
+    <Workout navigation={navigation} />
 );
 
 const ProgramScreen = ({ navigation }) => (
